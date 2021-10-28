@@ -1,0 +1,60 @@
+<!-- <body>
+    <div class="container">
+        <div style="margin-left: 27%; width: 300px; backdrop-filter: blur(5px); display: flex;flex-direction: column;border: 1px solid black; padding: 10px;margin-left: calc(100%-100px);">
+            <img src="/logo.jpg" alt="LOGO" width="100px" height="100px"
+                style="margin-left: 30%;border-radius: 10px;">
+            <h2 style="margin-left: 30%;">Hello User!</h2>
+            <h5 style="margin-left: 8%;">Please sign in below or <a href="#">create an account</a></h5>
+            <div style="margin-left: 10%;">
+                <input type="text" placeholder="Username">
+                <input type="password" placeholder="Password">
+                <button type="submit">Sign In</button>
+            </div>
+        </div>
+    </div>
+</body> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-in</title>
+
+    <!-- Links for Bootstrap,Icons,CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="signin.component.css">
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <div class="signin">
+            <div style="line-height: 0.5">
+            
+            <!-- Signin page, if not (redirect to sign up page)  -->
+            <h5>Hello User!</h5>
+            <span id="smallfont">Please sign in below or <a href="signup.html">Create an account</a></span id="small font">
+            </div>
+            <br>
+
+            <!-- Direct signin or manual signin -->
+            <div class="signinwith">
+                <div id="direct">
+                    <span id="smallfont">Sign in with:</span id="small font">
+                    <button style="background-color: orange;">Google</button><br>
+                    <button style="background-color: green;">Email</button>
+                </div>
+                <div id="border"></div>
+                <div id="manual">
+                    <input type="text" placeholder="Username"><br>
+                    <input type="password" placeholder="Password"><br>
+                    <button style="width: 200px;" id="signin"><a href="index.html">Sign-in</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+    <!-- Links for Bootstrap,Icons,CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="signup.component.css">
+</head>
+
+<body>
+    <div class="container">
+        <hr>
+        <div class="signup">    
+        <div style="line-height: 0.5;">
+
+            <!-- If signed in, u can redirect to signin page -->
+            <h5>Create a New Account</h5>
+            <span id="smallfont">Already have an account?? <a href="signin.html">Signin</a></span id="small font">
+        </div>
+        <br>
+
+        <!-- Direct or manual signup -->
+            <div class="signup_with">
+            <div id="direct">
+                <span id="smallfont">Sign in with:</span id="small font">
+                <button style="background-color: orange;">Google</button><br>
+                <button style="background-color: green;">Email</button>
+            </div>
+            <div id="border"></div>
+            <div id="manual">
+                <input type="text" placeholder="Name"><br>
+                <input type="number" placeholder="Mobile no"><br>
+                <input type="text" placeholder="Username"><br>
+                <input type="password" placeholder="Password"><br>
+                <button style="width: 200px;" (click)="success()">Create</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
+</body>
+</html>
+
+<!-- Additional code (under construction) -->
+
+<!-- <ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" 
+            id="modal-basic-title">
+            Signup
+        </h4>
+        <button>Create</button>
+    </div>
+    <div class="modal-body">
+        <h3>
+            Created successfully....
+        </h3>
+    </div>
+    <div class="modal-footer">
+        <button type="button"
+            (click)="modal.close('Save click')">
+            Ok
+        </button>
+    </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" 
+    (click)="open(content)">
+    Popup using Angular and Bootstrap
+</button> -->
+
+
+
+<!-- <ng-template #content let-modal>
+    <div class="modal-header">
+        <h4 class="modal-title" 
+            id="modal-basic-title">
+            Signup
+        </h4>
+        <button>Create</button>
+    </div>
+    <div class="modal-body">
+        <h3>
+            Created successfully....
+        </h3>
+    </div>
+    <div class="modal-footer">
+        <button type="button"
+            (click)="modal.close('Save click')">
+            Ok
+        </button>
+    </div>
+</ng-template>
+
+<button class="btn btn-lg btn-outline-primary" 
+    (click)="open(content)">
+    Popup using Angular and Bootstrap
+</button> -->

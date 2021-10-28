@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+
+    <!-- Links for Bootstrap,Icons,CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+    <link rel="stylesheet" href="about.component.css" />
+  </head>
+
+  <body>
+    <!-- Container class(To set the contents margin) -->
+    <div class="container">     
+    
+    <!-- Navigation Bar (To navigate between the pages) -->
+      <header class="header">
+        <nav class="navbar">
+          <span id="city" class="nav-logo"> LOGO </span>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link">Contact Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="signin.html" class="nav-link">Signin</a>
+            </li>
+            <li class="nav-item">
+              <a href="signup.html" class="nav-link">Signup</a>
+            </li>
+          </ul>
+
+          <!-- Menu icon (3 bars) -->
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+      </header>
+
+      <div class="container" id="History">
+        <div id="history_intro_pic">
+          <img src="historyintro.jpeg" alt="Introduction Pic"/>
+        </div>
+
+        <!--  (Image and history of the place) and (can add some additional info,links regarding the place) -->
+        <div id="history">
+          <h3>History....</h3>
+          <div>
+            Contrary to popular belief, Lorem Ipsum is not simply random text.
+            It has roots in a piece of classical Latin literature from 45 BC,
+            making it over 2000 years old. Richard McClintock, a Latin professor
+            at Hampden-Sydney College in Virginia, looked up one of the more
+            obscure Latin words, consectetur, from a Lorem Ipsum passage, and
+            going through the cites of the word in classical literature,
+            discovered the undoubtable source. Lorem Ipsum comes from sections
+            1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes
+            of Good and Evil) by Cicero, written in 45 BC. This book is a
+            treatise on the theory of ethics, very popular during the
+            Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit
+            amet..", comes from a line in section 1.10.32. The standard chunk of
+            Lorem Ipsum used since the 1500s is reproduced below for those
+            interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et
+            Malorum" by Cicero are also reproduced in their exact original form,
+            accompanied by English versions from the 1914 translation by H.
+            Rackham.
+          </div>
+        </div>
+      </div>
+
+      <!-- seperation line hr tag -->
+      <hr />
+
+      <!-- Location of the place -->
+      <div class="location">
+        <h5>Location....</h5>
+        <p>
+        <!-- Representing the location on google maps using iframe, google api -->
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123647.00830972732!2d79.91066348649517!3d14.428949568867088!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a4c8cca0e958771%3A0xd3036c2025161f55!2sNellore%2C%20Andhra%20Pradesh!5e0!3m2!1sen!2sin!4v1617259982054!5m2!1sen!2sin"
+            width="400" height="300" style="border: 0" allowfullscreen="" loading="lazy"></iframe>
+        </p>
+      </div>
+
+      <!-- Copyright Section -->
+      <div class="copyright">
+        <div class="container">
+          <div class="row" id="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+              <a href="#"><img src="mail.png" alt="gmail"/></a>
+              <a href="#"><img src="github.png" alt="Github"/></a>
+              <a href="#"><img src="instagram.png" alt="Instagram"/></a>
+              <a href="#"><img src="facebook.png" alt="Facebook"/></a>
+              <a href="#"><img src="twitter.png" alt="twitter"/></a>
+            </div>
+          </div>
+        </div>
+        <strong>
+          <p id="Mywork">© Copyright 2021. All Rights Reserved</p>
+        </strong>
+      </div>
+    </div>
+
+    <!-- Javascript for responsive navbar -->
+    <script>
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", mobileMenu);
+
+      function mobileMenu() {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
